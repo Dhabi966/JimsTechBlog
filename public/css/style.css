@@ -148,26 +148,10 @@
       color: white;
   }
   
-  .upvote-btn {
-    background-color:rgba(255, 255, 255, 0.6);
-    color: rgb(0, 0, 0);
-    
-  }
-  
   .edit {
     border-radius: 10px;
     padding-top: 5px;
     background-color: #111738;
-  }
-  
-  .upvote-btn {
-    background-color: #111738;
-    color: lightblue;
-  }
-  
-  .upvote-btn:hover {
-    background-color: saddlebrown;
-    color: rgb(255, 255, 255);
   }
   
   .comment-form {

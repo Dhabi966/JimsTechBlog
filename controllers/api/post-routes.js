@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const sequelize = require("../../config/connection");
-const { Comment, Post, User, Vote } = require("../../models");
+const { Comment, Post, User, } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 router.get("/", (req, res) => {
@@ -10,12 +10,7 @@ router.get("/", (req, res) => {
       "post_url",
       "title",
       "created_at",
-      [
-        sequelize.literal(
-          "(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)"
-        ),
-        "vote_count",
-      ],
+  
     ],
     order: [["created_at", "DESC"]],
     include: [
@@ -50,12 +45,7 @@ router.get("/:id", (req, res) => {
       "post_url",
       "title",
       "created_at",
-      [
-        sequelize.literal(
-          "(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)"
-        ),
-        "vote_count",
-      ],
+
     ],
     include: [
       {
@@ -98,21 +88,6 @@ router.post("/", withAuth, (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-});
-
-
-router.put("/upvote", withAuth, (req, res) => {
-  if (req.session) {
-    Post.upvote(
-      { ...req.body, user_id: req.session.user_id },
-      { Vote, Comment, User }
-    )
-      .then((updatedVoteData) => res.json(updatedVoteData))
-      .catch((err) => {
-        console.log(err);
-        res.status(500).json(err);
-      });
-  }
 });
 
 router.put("/:id", withAuth, (req, res) => {
