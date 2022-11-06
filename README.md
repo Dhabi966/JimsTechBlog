@@ -50,4 +50,4 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ```
 Deployed App URL:
-GitHub Repo URL: 
+GitHub Repo URL: https://github.com/Dhabi966/JimsTechBlog
