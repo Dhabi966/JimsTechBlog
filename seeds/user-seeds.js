@@ -4,16 +4,16 @@ const bcrypt = require('bcrypt');
 var password = bcrypt.hashSync("Smith1234", 10);
 
 const userSeedData = [{
-        username: 'Jessica',
+        username: 'Jimmy',
         password: password
 
     },
     {
-        username: 'Darren',
+        username: 'David',
         password: password
     },
     {
-        username: 'Max',
+        username: 'Mark',
         password: password
     }
 ];

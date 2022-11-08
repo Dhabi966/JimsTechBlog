@@ -1,6 +1,6 @@
-const { Post } = require('../models');
+const { Blog } = require('../models');
 
-const postSeedData = [{
+const blogSeedData = [{
         title: 'HOW TO CREATE A STICKY FOOTER WITH FLEXBOX',
         content: 'In this article, we will show you an easy technique that allows you to create a sticky footer with flexbox. It takes just a few lines of code and a couple of minutes to implement it.',
         user_id: 1
@@ -18,6 +18,6 @@ const postSeedData = [{
     }
 ];
 
-const seedPosts = () => Post.bulkCreate(postSeedData);
+const seedBlogs = () => Blog.bulkCreate(blogSeedData);
 
-module.exports = seedPosts;
+module.exports = seedBlogs;
