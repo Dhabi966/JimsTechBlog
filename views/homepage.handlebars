@@ -1,7 +1,13 @@
-<ol class="blog-list">
-  {{#each blogList as |blog|}}
-  <li>
-    {{> blog-content post }}
-  </li>
-  {{/each}}
-</ol>
+{{!-- display all blogs--}}
+  <section class="container thumbnail-container">
+    <div class="row">
+        {{#each blogList as |blog|}}
+        {{> blog-list}}
+        {{/each}}
+
+{{#if session.loggedIn}}
+
+<script src="/js/log-out.js"></script>
+
+
+{{/if}}
