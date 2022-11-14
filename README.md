@@ -47,10 +47,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 ```
 # Screenshots
 ```
-![Screenshot_20221113_105606](https://user-images.githubusercontent.com/108851005/201586712-42d3b955-7b48-410d-ae76-79323cff05e4.png)
-![Screenshot_20221113_105705](https://user-images.githubusercontent.com/108851005/201586715-d50caf03-b8c0-45ea-822f-8fcc40b2131a.png)
-![Screenshot_20221113_105734](https://user-images.githubusercontent.com/108851005/201586716-1cf53080-5064-49ba-bd98-838dc7b7e30e.png)
-![Screenshot_20221113_105805](https://user-images.githubusercontent.com/108851005/201586717-7affbfed-36ef-4b4f-af63-b77ead8d9a1f.png)
+
 
 
 
@@ -60,3 +57,4 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 Deployed App URL: https://jimstechblog.herokuapp.com/
 
 GitHub Repo URL: https://github.com/Dhabi966/JimsTechBlog
+![JimsTechBlog Screenshot1 jpg](https://user-images.githubusercontent.com/108851005/201587205-d80bb8ac-6cdf-4b48-82b4-f469e2062c0d.png)
