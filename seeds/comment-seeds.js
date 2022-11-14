@@ -3,7 +3,7 @@ const { Comment } = require('../models');
 const commentSeedData = [{
         user_id: 1,
         blog_id: 1,
-        content: "Great article, I enjoyed reading this"
+        content: "Great article"
     },
     {
         user_id: 2,
@@ -13,7 +13,7 @@ const commentSeedData = [{
     {
         user_id: 3,
         blog_id: 3,
-        content: "Really informative"
+        content: "Good to know"
     }
 ];
 
