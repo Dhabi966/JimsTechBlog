@@ -51,8 +51,9 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 ![JimsTechBlog Screenshot2 jpg](https://user-images.githubusercontent.com/108851005/201587386-b04ec8dd-41d4-464e-a600-acffc9f63fd1.png)
 ![JimsTechBlog Screenshot3 jpg](https://user-images.githubusercontent.com/108851005/201587384-fe619a05-e0a8-4920-95b6-6c7b6a1a2a77.png)
 ![‫JimsTechBlog Screenshot4 jpg](https://user-images.githubusercontent.com/108851005/201587385-292c1463-58e4-4a5a-a808-23d4359e89ed.png)
-```
-```
+
+
+
 
 Deployed App URL: https://jimstechblog.herokuapp.com/
 
