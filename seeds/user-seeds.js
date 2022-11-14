@@ -1,19 +1,19 @@
 const { User } = require('../models');
 const bcrypt = require('bcrypt');
 
-var password = bcrypt.hashSync("Smith1234", 10);
+var password = bcrypt.hashSync("George1234", 10);
 
 const userSeedData = [{
-        username: 'Jimmy',
+        username: 'Jeff',
         password: password
 
     },
     {
-        username: 'David',
+        username: 'Lauren',
         password: password
     },
     {
-        username: 'Mark',
+        username: 'Isla',
         password: password
     }
 ];

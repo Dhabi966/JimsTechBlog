@@ -9,10 +9,10 @@ async function loginHandler(event) {
           method: 'POST',
           body: JSON.stringify({
               username,
-              password,
-            headers: {'Content-Type': 'application/json'}
-      })
-    })
+              password
+          }),
+          headers:{'Content-Type': 'application/json'}
+      });
 
       if (res.ok) {
           document.location.replace('/dashboard');

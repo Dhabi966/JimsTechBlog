@@ -21,7 +21,7 @@
         "sequelize": "^6.3.5"
     },
     "author": "",
-    "license": "MIT",
+    "license": "ISC",
     "devDependencies": {
         "nodemon": "^2.0.19"
     }
