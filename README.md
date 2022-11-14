@@ -49,5 +49,5 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 
 ```
-Deployed App URL:
+Deployed App URL: https://jimstechblog.herokuapp.com/
 GitHub Repo URL: https://github.com/Dhabi966/JimsTechBlog
