@@ -46,6 +46,13 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ```
 # Screenshot
+```
+![Screenshot_20221113_105606](https://user-images.githubusercontent.com/108851005/201586499-5b63900c-f864-4df0-bfe5-85805b221145.png)
+![Screenshot_20221113_105705](https://user-images.githubusercontent.com/108851005/201586502-41c103e6-207d-418a-b7be-c061e400010e.png)
+![Screenshot_20221113_105734](https://user-images.githubusercontent.com/108851005/201586505-27130a96-5843-4ac7-8ecf-00e046e35e7c.png)
+![Screenshot_20221113_105805](https://user-images.githubusercontent.com/108851005/201586506-4c5b1b0c-8085-4c98-adaf-227ea319929c.png)
+
+
 
 
 ```
