@@ -1,14 +1,14 @@
-function logout() {
+const logout = async () => {
+  const response = await fetch('/api/users/logout', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+  });
 
-  // Post request to the logout route
-  fetch("/user/logout", {
-    method: "post",
-    headers: { "Content-Type": "application/json" },
-  })
-    .then(function () {
-      document.location.replace("/");
-    })
-    .catch((err) => console.log(err));
-}
+  if (response.ok) {
+    document.location.replace('/');
+  } else {
+    alert(response.statusText);
+  }
+};
 
-document.querySelector("#logout-btn").addEventListener("click", logout);
+document.querySelector('#logout').addEventListener('click', logout);
