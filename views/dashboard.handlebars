@@ -1,18 +1,12 @@
-<section>
-  <h2>Your Blogs</h2>
-    {{#each userblogList as |blog|}} {{!-- user created blogs--}}
-    {{> dashboard-blog}} {{!-- partial view--}}
-    {{/each}}
-
-</section>
-
-<button type="submit" class="btn" ><a style="color:black" id="create-blog-form" href="/dashboard/new">+ New Post</a></button>
-
-{{#if session.loggedIn}}
-
-<script src="/js/logout.js"></script>
-
-{{/if}}
-
-<script src="/js/create-blog.js"></script>
-
+<div>
+<h2>Dashboard</h2>
+</div>
+    {{#each posts as |post|}}
+<div>
+    {{> post_info post}}
+    <a href="/dashboard/edit/{{post.id}}"><button class="no-button">Edit Post</button></a>
+</div>
+{{/each}}
+<div>
+    <a href="/dashboard/create/"><button class="no-button">Create Post</button></a>
+</div>

@@ -1,12 +1,5 @@
-{{!-- display all blogs--}}
-  <section class="container thumbnail-container">
-    <div class="row">
-        {{#each blogList as |blog|}}
-        {{> blog-list}}
-        {{/each}}
-
-{{#if session.loggedIn}}
-
-<script src="/js/logout.js"></script>
-
-{{/if}}
+{{#each posts as |post|}}
+<div>
+    {{> post_info post}}
+</div>
+{{/each}}
