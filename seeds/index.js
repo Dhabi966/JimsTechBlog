@@ -1,15 +1,17 @@
-const seedUsers = require('./user-seeds.js');
-const seedBlogs = require('./blog-seeds.js');
-const seedComments = require('./comment-seeds.js');
+const User = require('../models/User');
 
-const sequelize = require('../config/connection');
+const userData = [
+  {
+    username: 'Lernantino',
+    password: 'Password321',
+  },
+  {
+    username: 'Xandromus',
+    password: 'Password123',
+  },
 
-const seedAll = async() => {
-    await sequelize.sync({ force: true });
-    await seedUsers();
-    await seedBlogs();
-    await seedComments();
-    process.exit(0);
-};
+];
 
-seedAll();
+const seedUser = () => User.bulkCreate(userData);
+
+module.exports = seedUser;
